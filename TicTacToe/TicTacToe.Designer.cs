@@ -37,6 +37,7 @@
             this.btnBottomMiddle = new System.Windows.Forms.Button();
             this.btnMiddleRight = new System.Windows.Forms.Button();
             this.btnMiddleLeft = new System.Windows.Forms.Button();
+            this.lblTimer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnTopLeft
@@ -120,11 +121,21 @@
             this.btnMiddleLeft.UseVisualStyleBackColor = true;
             this.btnMiddleLeft.Click += new System.EventHandler(this.btnMiddleLeft_Click);
             // 
+            // lblTimer
+            // 
+            this.lblTimer.AutoSize = true;
+            this.lblTimer.Location = new System.Drawing.Point(240, 239);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(81, 13);
+            this.lblTimer.TabIndex = 9;
+            this.lblTimer.Text = "Timer: 00:00:00";
+            // 
             // TicTacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(406, 261);
+            this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.btnBottomMiddle);
             this.Controls.Add(this.btnMiddleRight);
             this.Controls.Add(this.btnMiddleLeft);
@@ -138,6 +149,7 @@
             this.Text = "TicTacToe";
             this.Load += new System.EventHandler(this.TicTacToe_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -152,6 +164,7 @@
         private System.Windows.Forms.Button btnBottomMiddle;
         private System.Windows.Forms.Button btnMiddleRight;
         private System.Windows.Forms.Button btnMiddleLeft;
+        private System.Windows.Forms.Label lblTimer;
     }
 }
 
